@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from 'axios';
-import { executeRequest } from "../services/api";
+import { executeRequest } from "../Services/api";
 import { NextPage } from "next";
 import { AccessTokenProps } from "../types/AccessTokenProps";
 

@@ -3,6 +3,7 @@ import md5 from 'md5';
 import { DefaultResponse } from '../../types/DefaultResponse';
 import { UserModel } from '../../models/UserModel';
 import { dbConnect } from '../../middlewares/dbConnect';
+import { corsPolicy } from '../../middlewares/corsPolicy';
 import { User } from '../../types/User';
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<DefaultResponse>) => {
@@ -31,3 +32,5 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<DefaultResponse
         res.status(500).json({ error: 'Ocorreu erro ao cadastrar usuario, tente novamente.' });
     }
 }
+
+export default corsPolicy(dbConnect(handler));

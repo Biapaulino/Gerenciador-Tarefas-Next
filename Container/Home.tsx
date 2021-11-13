@@ -1,12 +1,12 @@
 import { NextPage } from "next";
 import { useEffect, useState } from "react";
 import { Modal } from "react-bootstrap";
-import { Filter } from "../components/Filter";
-import { Footer } from "../components/Footer";
+import { Filter } from "../Components/Filter";
+import { Footer } from "../Components/Footer";
 
-import { Header } from "../components/Header";
-import { List } from "../components/List";
-import { executeRequest } from "../services/api";
+import { Header } from "../Components/Header";
+import { List } from "../Components/List";
+import { executeRequest } from "../Services/api";
 import { AccessTokenProps } from "../types/AccessTokenProps";
 import { Task } from "../types/Task";
 

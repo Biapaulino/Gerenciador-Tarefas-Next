@@ -1,10 +1,10 @@
 import { NextPage } from "next";
 import { useState } from "react";
 import { Modal } from "react-bootstrap";
-import { executeRequest } from "../services/api";
 import { Task } from "../types/Task";
-import { Item } from "./Item";
 import moment from 'moment';
+import { executeRequest } from "../Services/api";
+import { Item } from "../Components/Item";
 
 /* eslint-disable @next/next/no-img-element */
 
